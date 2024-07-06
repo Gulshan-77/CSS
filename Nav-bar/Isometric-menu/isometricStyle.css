@@ -32,7 +32,8 @@ ul li {
   transition: 0.5s;
 }
 
-ul li:hover {
+ul li:hover,
+ul li.reset {
   transform: translateX(50px);
   /* transform: translateX(-50px); */
   box-shadow: 2px 2px 5px #fff;
@@ -42,12 +43,6 @@ ul li:hover {
     rgb(170, 165, 255) 46%,
     rgb(165, 255, 205) 100.2%
   );
-}
-
-ul li:active {
-  transform: translateX(0); /* Reset the transformation */
-  box-shadow: none; /* Reset the shadow */
-  background: #cfb0ff; /* Reset the background */
 }
 
 /* @@@@@@@@@@ TO SLIDE IN OPPOSITE DIRECTION @@@@@@@ */
@@ -68,7 +63,8 @@ ul li::before {
   transition: 0.5s;
 }
 
-ul li:hover::before {
+ul li:hover::before,
+ul li.rest::before {
   background: linear-gradient(
     103deg,
     rgb(235, 225, 188) 7.2%,
@@ -77,11 +73,6 @@ ul li:hover::before {
   );
   box-shadow: 2px 2px 4px #fff;
   transition: ease-in-out;
-}
-
-ul li:active::before {
-  background: #9a8bcd; /* Reset the background */
-  box-shadow: none; /* Reset the shadow */
 }
 
 ul li::after {
@@ -97,17 +88,14 @@ ul li::after {
   transition: 0.5s;
 }
 
-ul li:hover::after {
+ul li:hover::after,
+ul li.reset::after {
   background: linear-gradient(
     103deg,
     rgb(235, 225, 188) 7.2%,
     rgb(232, 188, 234) 57.5%,
     rgb(203, 209, 244) 90.7%
   );
-}
-
-ul li:active::after {
-  background: #a191d5; /* Reset the background */
 }
 
 ul li a {
@@ -119,16 +107,11 @@ ul li a {
   transition: 0.5s;
 }
 
-ul li:hover a {
+ul li:hover a,
+ul li.reset a {
   color: #fff;
   text-shadow: 4px 4px 5px #a191d5;
   font-weight: bold;
-}
-
-ul li:active a {
-  color: white; /* Reset the color */
-  text-shadow: none; /* Reset the text shadow */
-  font-weight: normal; /* Reset the font weight */
 }
 
 ul li:last-child:after {
@@ -142,8 +125,5 @@ ul li:last-child:after {
     width: 190px;
     padding: 15px 15px;
     margin: 10px;
-  }
-  ul li:active {
-    transform: translateX(0); /* reset the translation */
   }
 }

@@ -23,5 +23,13 @@
         <a href="#">Blushing Blooms Cake </a>
       </li>
     </ul>
+
+    <script>
+      document.querySelectorAll("ul li").forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("reset");
+        });
+      });
+    </script>
   </body>
 </html>
