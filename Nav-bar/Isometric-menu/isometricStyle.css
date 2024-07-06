@@ -34,7 +34,7 @@ ul li {
 
 ul li:hover {
   transform: translateX(50px);
-  /* transform: translateX(50px); */
+  /* transform: translateX(-50px); */
   box-shadow: 2px 2px 5px #fff;
   background: radial-gradient(
     circle at 0.8% 3.1%,
@@ -121,5 +121,8 @@ ul li:last-child:after {
     width: 190px;
     padding: 15px 15px;
     margin: 10px;
+  }
+  ul li:active {
+    transform: translateX(0); /* reset the translation */
   }
 }
