@@ -44,6 +44,12 @@ ul li:hover {
   );
 }
 
+ul li:active {
+  transform: translateX(0); /* Reset the transformation */
+  box-shadow: none; /* Reset the shadow */
+  background: #cfb0ff; /* Reset the background */
+}
+
 /* @@@@@@@@@@ TO SLIDE IN OPPOSITE DIRECTION @@@@@@@ */
 /* ul .slide:hover {
   transform: translateX(-80px);
@@ -73,6 +79,11 @@ ul li:hover::before {
   transition: ease-in-out;
 }
 
+ul li:active::before {
+  background: #9a8bcd; /* Reset the background */
+  box-shadow: none; /* Reset the shadow */
+}
+
 ul li::after {
   content: "";
   position: absolute;
@@ -95,6 +106,10 @@ ul li:hover::after {
   );
 }
 
+ul li:active::after {
+  background: #a191d5; /* Reset the background */
+}
+
 ul li a {
   text-decoration: none;
   color: white;
@@ -108,6 +123,12 @@ ul li:hover a {
   color: #fff;
   text-shadow: 4px 4px 5px #a191d5;
   font-weight: bold;
+}
+
+ul li:active a {
+  color: white; /* Reset the color */
+  text-shadow: none; /* Reset the text shadow */
+  font-weight: normal; /* Reset the font weight */
 }
 
 ul li:last-child:after {
