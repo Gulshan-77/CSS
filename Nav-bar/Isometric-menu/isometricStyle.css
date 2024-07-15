@@ -44,26 +44,6 @@ ul li:hover {
   );
 }
 
-ul li.reset {
-  transform: translateX(0px) !important;
-  /* box-shadow: none;
-  background: #cfb0ff; */
-}
-/*
-ul li.reset::before {
-  background: #9a8bcd;
-  box-shadow: none;
-} */
-
-/* ul li.reset::after {
-  background: #a191d5;
-} */
-/* ul li.reset a {
-  color: white;
-  text-shadow: none;
-  font-weight: normal;
-} */
-
 /* @@@@@@@@@@ TO SLIDE IN OPPOSITE DIRECTION @@@@@@@ */
 /* ul .slide:hover {
   transform: translateX(-80px);
@@ -141,5 +121,8 @@ ul li:last-child:after {
     width: 190px;
     padding: 15px 15px;
     margin: 10px;
+  }
+  ul li.reset {
+    transform: translateX(0px) !important;
   }
 }
